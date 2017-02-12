@@ -1,9 +1,9 @@
 <?php
 /***
-Plugin Name: Help Documentation
-Plugin URI: http://abc.com
-Description: Its the simple plugin that can help in help suport
-Author URI: http://abc.com
+Plugin Name: Postnidea Help Documentation
+Plugin URI: http://postnidea.com
+Description: Its the simple plugin that can help in creating help support in the plugin development.
+Author URI: http://postnidea.com
 **/
 
 function postnidea_admin_actions() {
@@ -14,11 +14,11 @@ function postnidea_admin_actions() {
 add_action('admin_menu', 'postnidea_admin_actions');
 
 function my_magic_function(){
-	echo "Here work for hero module";
+	echo '<h1 class="wp-heading-inline">Here work for hero module</h1>';
 }
 
 function my_magic_function1(){
-	echo "Here work for hero module component";
+	echo '<h1 class="wp-heading-inline">Here work for hero module component</h1>';
 }
 
 function postnidea_contextual_help($contextual_help, $screen_id, $screen) {
